@@ -15,6 +15,21 @@ console.log(person.name);
 var person2 = {
     name: "Child",
     age: 7,
-    hobbies: ['football', 'cricket']
+    hobbies: ['football', 'cricket'],
+    roles: [10, "admin"]
 };
 console.log(person2);
+var large_number = 234242736478926347267834627836478;
+console.log(large_number.toString());
+// Functions
+function concatString(argOne, argTwo) {
+    return argOne + argTwo;
+}
+var stringResult = concatString("This world is full of ", "surprises");
+console.log(stringResult);
+var combineValues;
+function addValues(arg1, arg2) {
+    return arg1 + arg2;
+}
+combineValues = addValues;
+console.log(combineValues(23, 54));

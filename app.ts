@@ -38,3 +38,33 @@ const person2: Person = {
 };
 
 console.log(person2);
+let large_number = 234242736478926347267834627836478;
+console.log(large_number.toString());
+
+// Custom type
+
+type Combinable = number | string;
+
+// type alias with custom literal type
+
+type newType = 'as-number' | 'as-text'
+
+// Functions
+
+function concatString(argOne: string, argTwo: string): string {
+    return argOne + argTwo;
+}
+
+const stringResult = concatString("This world is full of ", "surprises");
+
+console.log(stringResult);
+
+let combineValues: (a: number, b: number) => number;
+
+function addValues(arg1, arg2) {
+    return arg1 + arg2;
+}
+
+combineValues = addValues;
+
+console.log(combineValues(23, 54))
