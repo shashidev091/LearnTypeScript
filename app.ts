@@ -61,7 +61,7 @@ console.log(stringResult);
 
 let combineValues: (a: number, b: number) => number;
 
-function addValues(arg1, arg2) {
+function addValues(arg1: number, arg2: number) {
     return arg1 + arg2;
 }
 

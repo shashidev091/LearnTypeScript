@@ -9,8 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run compile & lite-server",
-    "compile": "tsc app.ts --watch"
+    "start": "npm run tsc_compile & lite-server",
+    "compile": "tsc app.ts --watch",
+    "tsc_compile": "tsc --watch"
   },
   "repository": {
     "type": "git",
