@@ -1,3 +1,4 @@
+"use strict";
 console.log('Here we go learning ts once again...');
 var number1 = 2.8;
 var number2 = 3;
@@ -29,10 +30,10 @@ var stringResult = concatString("This world is full of ", "surprises");
 console.log(stringResult);
 var combineValues;
 function addValues(arg1, arg2) {
-    return arg1 + arg2;
+    return parseInt(arg1) + arg2;
 }
 combineValues = addValues;
-console.log(combineValues(23, 54));
+console.log(combineValues("23", 54));
 // Type of callback
 function funWithCallback(arg, callback) {
     var store = callback(arg);

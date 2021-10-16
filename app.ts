@@ -59,15 +59,15 @@ const stringResult = concatString("This world is full of ", "surprises");
 
 console.log(stringResult);
 
-let combineValues: (a: number, b: number) => number;
+let combineValues: (a: Combinable, b: number) => number;
 
-function addValues(arg1: number, arg2: number) {
-    return arg1 + arg2;
+function addValues(arg1: Combinable, arg2: number) {
+    return parseInt(<string>arg1) + arg2;
 }
 
 combineValues = addValues;
 
-console.log(combineValues(23, 54))
+console.log(combineValues("23", 54))
 
 // Type of callback
 
