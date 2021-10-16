@@ -1,0 +1,31 @@
+{
+  "name": "learntypescript",
+  "version": "1.0.0",
+  "description": "Learning TSC",
+  "main": "app.js",
+  "dependencies": {
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run tsc_compile & lite-server",
+    "compile": "tsc app.ts --watch",
+    "tsc_compile": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashidev091/LearnTypeScript.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "TS"
+  ],
+  "author": "Shashi Bhagat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shashidev091/LearnTypeScript/issues"
+  },
+  "homepage": "https://github.com/shashidev091/LearnTypeScript#readme"
+}
