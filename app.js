@@ -33,3 +33,12 @@ function addValues(arg1, arg2) {
 }
 combineValues = addValues;
 console.log(combineValues(23, 54));
+// Type of callback
+function funWithCallback(arg, callback) {
+    var store = callback(arg);
+    console.log(store);
+}
+funWithCallback("Shashi", function (arg) {
+    return arg + " Bhagat";
+});
+console.log('Really');
